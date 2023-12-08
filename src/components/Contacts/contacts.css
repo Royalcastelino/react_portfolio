@@ -1,0 +1,72 @@
+#contacts
+{
+    margin: 0 auto;
+    min-height: calc(100vh -4 rem);
+    width:100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.contactsTitle
+{
+    margin: 1rem 0;
+    font-size: 3rem;  
+}
+#linkedIn
+{
+    color: turquoise;  
+    margin-top: 2rem; 
+}
+#ename
+{
+    border-bottom: solid turquoise;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 2rem;
+    width: 50vw;
+    color: turquoise;
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+}
+#eemail
+{
+    margin-top: 2rem;
+    border-bottom: solid turquoise;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 2rem;
+    width: 50vw;
+    color: turquoise;
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+}
+#emessage
+{
+    margin-top: 2rem;
+    border-bottom: solid turquoise;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 2rem;
+    width: 50vw;
+    color: turquoise;
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+}
+#subBtn1
+{
+    width: 10rem;
+    height: 4rem;
+    margin-top: 2.5rem;
+    background-color: turquoise;
+    color: black;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

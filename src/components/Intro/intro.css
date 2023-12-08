@@ -1,0 +1,76 @@
+#intro
+{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: visible;
+}
+.bg
+{
+    position: absolute;
+    top: 7.5rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 50vh;
+}
+.introContent
+{
+    height:100vh;
+    width:100vh;
+    padding:2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hello
+{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName
+{
+    color: turquoise;
+}
+
+.introPara
+{
+    font-size: medium;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media screen and (max-width:915px) 
+{
+    #intro
+    {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:500px) 
+{
+    /* .bg 
+    {
+        right: -10vw;
+    }    
+    .introContent
+    {
+        font-size: 2rem;
+    }
+    .introPara
+    {
+        max-width: 25rem;
+    } */
+    #intro
+    {
+        display: flex;
+    }
+}

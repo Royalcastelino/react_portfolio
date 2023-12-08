@@ -1,0 +1,193 @@
+#skills
+{
+    margin: 0 auto;
+    min-height: calc(100vh -4 rem);
+    width:100vw;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.skillsTitle
+{
+    margin: 1rem 0;
+    font-size: 3rem;  
+}
+
+.fai
+{
+    color: turquoise;
+}
+
+.skillscontainer > div
+{
+    display: flex;
+    font-size: 100px;
+    flex-wrap: wrap;
+}
+
+.face1
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+
+
+.face2
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+
+.face3
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+.face4
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+.face5
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+.face6
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+
+.face7
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+}
+
+.face1:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+.face2:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+.face3:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+
+.face4:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+
+.face5:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+
+.face6:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+
+.face7:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+
+.innerdiv
+{
+    font-size: 2rem;
+}
+
+
+
+/* General styles for non-responsive layout */
+/* Add your global styles here */
+
+/* Media query for screens up to 767 pixels (typical mobile size) */
+@media screen and (max-width: 767px) {
+    #skills {
+      padding: 10px; /* Example padding adjustment for smaller screens */
+    }
+  
+    .skillscontainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; /* Center vertically */
+    }
+  
+    .cubespinner {
+      width: 100%; /* Ensure the cube spinner takes full width on smaller screens */
+      text-align: center; /* Center the text content */
+    }
+  
+    .face1,
+    .face2,
+    .face3,
+    .face4,
+    .face5,
+    .face6,
+    .face7 {
+      width: 100%; /* Make each face take full width on smaller screens */
+      margin: 10px 0; /* Example margin adjustment between faces */
+    }
+  }
+  

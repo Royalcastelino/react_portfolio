@@ -1,0 +1,117 @@
+#projects
+{
+    margin: 0 auto;
+    min-height: calc(100vh -4 rem);
+    width:100vw;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    /* background-color: black; */
+}
+.projectstitle
+{
+    margin: 1rem 0;
+    font-size: 3rem;
+
+}
+
+.allprj
+{
+
+    display: inline;
+    flex-wrap: wrap;
+}
+
+/* .projectsImgs
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+} */
+
+.projectsImg
+{
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.project1
+{
+    box-sizing: border-box;
+    max-height: 600px;
+    max-width: 405px;
+    /* border:3px solid turquoise; */
+    margin: 3rem;
+}
+
+.project1 img
+{
+    max-height:400px;
+    max-width:400px;
+    border-bottom: 2px solid turquoise;
+}
+
+.prj1title
+{
+    color: turquoise;
+    font-size: 2rem;
+}
+
+.prj1des
+{
+    text-indent: 5rem;
+    text-align: justify;
+}
+
+.github
+{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 40px;
+    color: turquoise;
+}
+.gspan
+{
+    font-size: medium;
+}
+
+a:active
+{
+    color: turquoise;
+}
+
+/* General styles for non-responsive layout */
+/* Add your global styles here */
+
+/* Media query for screens up to 767 pixels (typical mobile size) */
+@media screen and (max-width: 767px) {
+    #projects {
+      padding: 10px; /* Example padding adjustment for smaller screens */
+    }
+  
+    .allprj {
+      flex-direction: column; /* Vertical arrangement for smaller screens */
+    }
+  
+    .project1 {
+      margin-bottom: 10px; /* Example margin adjustment between projects */
+    }
+  
+    /* Adjusting text responsiveness in project descriptions */
+    .prj1des {
+      font-size: 14px; /* Example font-size adjustment for smaller screens */
+      line-height: 1.4; /* Example line-height adjustment for better readability */
+    }
+  
+    /* Add any other specific styles for smaller screens here */
+  }
+  
+  

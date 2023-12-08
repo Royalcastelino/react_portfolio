@@ -187,7 +187,7 @@
     .face6,
     .face7 {
       width: 100%; /* Make each face take full width on smaller screens */
-      margin: 10px 0; /* Example margin adjustment between faces */
+      margin: 10px 10px; /* Example margin adjustment between faces */
     }
   }
   

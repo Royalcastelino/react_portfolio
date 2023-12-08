@@ -22,7 +22,7 @@ const Navbar =()=>
                 <Link to="intro" className='desktopMenuListItem'>Home</Link>
                 <Link to="skills" className='desktopMenuListItem'>Skills</Link>
                 <Link to="projects" className='desktopMenuListItem'>Projects</Link>
-                <Link className='desktopMenuListItem'>Resume</Link>
+                <a href='https://drive.google.com/file/d/1u6OTnrqQq1qjXROIR-MDi6ssxF9pOtXp/view?usp=sharing' className='desktopMenuListItem'>Resume</a>
             </div>
             <button className='desktopMenuBtn' onClick={scrollToContact}>
                 <img src={contact} alt="btnimg1" className='desktopMenuImg'/>Contact Me</button>

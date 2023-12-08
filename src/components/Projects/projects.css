@@ -3,7 +3,7 @@
     margin: 0 auto;
     min-height: calc(100vh -4 rem);
     width:100vw;
-    max-width: 80rem;
+    max-width: 90rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,7 @@
     max-height: 600px;
     max-width: 405px;
     /* border:3px solid turquoise; */
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .project1 img
@@ -88,10 +88,7 @@ a:active
     color: turquoise;
 }
 
-/* General styles for non-responsive layout */
-/* Add your global styles here */
 
-/* Media query for screens up to 767 pixels (typical mobile size) */
 @media screen and (max-width: 767px) {
     #projects {
       padding: 10px; /* Example padding adjustment for smaller screens */
@@ -109,6 +106,7 @@ a:active
     .prj1des {
       font-size: 14px; /* Example font-size adjustment for smaller screens */
       line-height: 1.4; /* Example line-height adjustment for better readability */
+      margin: 0 10px;  
     }
   
     /* Add any other specific styles for smaller screens here */

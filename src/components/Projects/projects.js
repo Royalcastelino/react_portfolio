@@ -1,7 +1,7 @@
 import React from "react";
 import './projects.css'
 import project1 from '../../assets/project1.jpg';
-import project2 from '../../assets/project2.jpg';
+// import project2 from '../../assets/project2.jpg';
 import project3 from '../../assets/project3.jpg';
 
 import { Card } from 'react-bootstrap';
@@ -28,7 +28,7 @@ const Projects = () => {
           </Card.Body>
         </Card>
 
-        <Card className="project1">
+        {/* <Card className="project1">
           <Card.Img src={project2} alt="logo" />
           <Card.Body>
             <Card.Title className="prj1title">Onroad Assistance</Card.Title>
@@ -41,7 +41,7 @@ const Projects = () => {
               <a className="github" href="www.github.com"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
             </div>
           </Card.Body>
-        </Card>
+        </Card> */}
         <Card className="project1">
           <Card.Img src={project3} alt="logo" />
           <Card.Body>

@@ -11,6 +11,7 @@
     text-align: center;
     padding: 0 1rem;
 }
+
 .skillsTitle
 {
     margin: 1rem 0;
@@ -29,6 +30,22 @@
     flex-wrap: wrap;
 }
 
+@keyframes glow 
+{
+    20% 
+    {
+      box-shadow: 0 0 20px turquoise;
+    }
+    50% 
+    {
+      box-shadow: 0 0 10px transparent;
+    }
+    90%
+    {
+        box-shadow: 0 0 20px turquoise;
+    }
+  }
+
 .face1
 {
     border: 2px solid turquoise;
@@ -37,6 +54,9 @@
     margin: 15px;
     width: 210px;
     cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
 
 
@@ -48,6 +68,10 @@
     margin: 15px;
     width: 210px;
     cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
 }
 
 .face3
@@ -58,6 +82,10 @@
     margin: 15px;
     width: 210px;
     cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-timing-function: ease-in;
 }
 .face4
 {
@@ -67,6 +95,10 @@
     margin: 15px;
     width: 210px;
     cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-delay: 6s;
+    animation-timing-function: ease-in;
 }
 .face5
 {
@@ -76,6 +108,10 @@
     margin: 15px;
     width: 210px;
     cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-delay: 8s;
+    animation-timing-function: ease-in;
 }
 .face6
 {
@@ -85,6 +121,10 @@
     margin: 15px;
     width: 210px;
     cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-delay: 10s;
+    animation-timing-function: ease-in;
 }
 
 .face7
@@ -95,6 +135,10 @@
     margin: 15px;
     width: 210px;
     cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-delay: 12s;
+    animation-timing-function: ease-in;
 }
 
 .face1:hover
@@ -104,6 +148,7 @@
     background-color: black;
     box-shadow: 0 10px 10px 0 turquoise;
 }
+
 .face2:hover
 {
     transform: translateY(-10px);

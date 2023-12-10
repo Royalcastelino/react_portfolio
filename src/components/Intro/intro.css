@@ -10,10 +10,11 @@
 {
     position: absolute;
     top: 7.5rem;
-    right: 0;
+    right: 140px;
     z-index: -1;
     object-fit: cover;
-    height: 50vh;
+    height: 80vh;
+    /* background-color: aliceblue; */
 }
 .introContent
 {
@@ -26,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     color: white;
+    /* background-color: black; */
 }
 
 .hello
@@ -57,20 +59,24 @@
 
 @media screen and (max-width:500px) 
 {
-    /* .bg 
-    {
-        right: -10vw;
-    }    
-    .introContent
-    {
-        font-size: 2rem;
-    }
-    .introPara
-    {
-        max-width: 25rem;
-    } */
     #intro
     {
         display: flex;
     }
 }
+
+@media screen and (min-width: 768px)
+{
+    .bg
+    {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 767px)
+  {
+    .bg 
+    {
+      display: none;
+    }
+  }

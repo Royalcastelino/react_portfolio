@@ -59,6 +59,31 @@
     border-bottom: 2px solid turquoise;
 }
 
+.prjimg
+{
+    animation-name: glow;
+    animation-duration: 8s;
+    border-radius: 8px;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes glow
+{
+    20%
+    {
+        box-shadow: 0px 3px 5px 3px turquoise;
+    }
+    50%
+    {
+        box-shadow: 0px 3px 5px 3px turquoise;
+    }
+    80%
+    {
+        box-shadow: 0px 3px 5px 3px turquoise;
+    }
+}
+
 .prj1title
 {
     color: turquoise;

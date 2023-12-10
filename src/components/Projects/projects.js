@@ -1,7 +1,7 @@
 import React from "react";
 import './projects.css'
 import project1 from '../../assets/project1.jpg';
-// import project2 from '../../assets/project2.jpg';
+import project2 from '../../assets/project2.jpg';
 import project3 from '../../assets/project3.jpg';
 
 import { Card } from 'react-bootstrap';
@@ -14,7 +14,7 @@ const Projects = () => {
       <h2 className="projectstitle">My Projects</h2>
       <div className="allprj" style={{ display: 'flex' }}>
         <Card className="project1">
-          <Card.Img src={project1} alt="logo" />
+          <Card.Img className="prjimg" src={project1} alt="logo" />
           <Card.Body>
             <Card.Title className="prj1title">Souza Furniture Mart</Card.Title>
             <Card.Text className="prj1des">
@@ -23,27 +23,26 @@ const Projects = () => {
               desired products without any hassle.
             </Card.Text>
             <div>
-              <a className="github" href="www.github.com"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
+              <a className="github" href="https://github.com/Royalcastelino/project"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
             </div>
           </Card.Body>
         </Card>
 
-        {/* <Card className="project1">
-          <Card.Img src={project2} alt="logo" />
+        <Card className="project1">
+          <Card.Img className="prjimg" src={project2} alt="logo" />
           <Card.Body>
-            <Card.Title className="prj1title">Onroad Assistance</Card.Title>
+            <Card.Title className="prj1title">React Weather Forecast</Card.Title>
             <Card.Text className="prj1des">
-            This is a web-based application that provides people travelling with an easy and convenient way to book
-            a mechanic. which will help them in an unexpected situations raised by the mechanical issues of their
-            vehicles
+            Explore real-time weather updates effortlessly with our React-based online weather forecast site. Experience a sleek and intuitive interface that provides accurate and up-to-date weather information.
             </Card.Text>
             <div>
-              <a className="github" href="www.github.com"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
+              <a className="github" href="https://github.com/Royalcastelino/React_weather"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
             </div>
           </Card.Body>
-        </Card> */}
+        </Card>
+
         <Card className="project1">
-          <Card.Img src={project3} alt="logo" />
+          <Card.Img className="prjimg" src={project3} alt="logo" />
           <Card.Body>
             <Card.Title className="prj1title">Badminton Score</Card.Title>
             <Card.Text className="prj1des">
@@ -51,7 +50,7 @@ const Projects = () => {
             providing a user-friendly interface for effortlessly capturing and managing game scores, ensuring an efficient and enjoyable experience for players.
             </Card.Text>
             <div>
-              <a className="github" href="www.github.com"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
+              <a className="github" href="https://github.com/Royalcastelino/Badminton_score"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
             </div>
           </Card.Body>
         </Card>

@@ -39,7 +39,7 @@ const Contacts=()=>{
                 <div><input type='text' id='emessage' placeholder='Message'/></div>
                 <button id='subBtn1'>Send</button>
             </form>
-            <a href="https://www.linkedin.com/in/royal-castelino" id='linkedIn'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+            <a href="https://www.linkedin.com/in/royal-castelino" id='linkedIn'><FontAwesomeIcon icon={faLinkedin} size="2x" /><p className='linkedin'>Linkedin</p></a>
         </section>
     );
 };

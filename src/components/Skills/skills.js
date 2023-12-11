@@ -1,7 +1,7 @@
 import React from 'react';
 import './skills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAndroid, faCss3, faHtml5, faJava, faJs, faPhp, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faAndroid, faCss3, faHtml5, faJava, faJs, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 const Skills=()=>{
     return(
         <section id='skills'>
@@ -35,6 +35,10 @@ const Skills=()=>{
                     <div className='face7'>
                         <FontAwesomeIcon className='fai' icon={faJs}/>
                         <div className='innerdiv'>Javascript</div>
+                    </div>
+                    <div className='face8'>
+                        <FontAwesomeIcon className='fai' icon={faPython}/>
+                        <div className='innerdiv'>Python</div>
                     </div>
                 </div>
             </div>

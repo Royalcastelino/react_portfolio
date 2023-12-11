@@ -141,6 +141,20 @@
     animation-timing-function: ease-in;
 }
 
+.face8
+{
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding : 20px;
+    margin: 15px;
+    width: 210px;
+    cursor: pointer;
+    animation: glow 2s;
+    animation-iteration-count: 1;
+    animation-delay: 14s;
+    animation-timing-function: ease-in;
+}
+
 .face1:hover
 {
     transform: translateY(-10px);
@@ -196,6 +210,14 @@
     box-shadow: 0 10px 10px 0 turquoise;
 }
 
+.face8:hover
+{
+    transform: translateY(-10px);
+    color: turquoise;
+    background-color: black;
+    box-shadow: 0 10px 10px 0 turquoise;
+}
+
 .innerdiv
 {
     font-size: 2rem;
@@ -230,7 +252,8 @@
     .face4,
     .face5,
     .face6,
-    .face7 {
+    .face7
+    .face8 {
       width: 100%; /* Make each face take full width on smaller screens */
       margin: 10px 10px; /* Example margin adjustment between faces */
     }

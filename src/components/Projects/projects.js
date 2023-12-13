@@ -23,7 +23,7 @@ const Projects = () => {
               desired products without any hassle.
             </Card.Text>
             <div>
-              <a className="github" href="https://github.com/Royalcastelino/project"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
+              <a className="github" href="https://github.com/Royalcastelino/Furniture-Website"><FontAwesomeIcon icon={faGithub}/>GitHub</a>
             </div>
           </Card.Body>
         </Card>

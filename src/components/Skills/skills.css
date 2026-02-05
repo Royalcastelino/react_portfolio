@@ -1,261 +1,140 @@
-#skills
-{
-    margin: 0 auto;
-    min-height: calc(100vh -4 rem);
-    width:100vw;
-    max-width: 80rem;
+#skills {
+    min-height: 100vh;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+}
+
+.skillsTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.skillsTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #f39c12, #e74c3c);
+    border-radius: 2px;
+}
+
+.skillscontainer {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skillCategory {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.skillCategory:hover {
+    border-color: rgba(243, 156, 18, 0.3);
+    box-shadow: 0 10px 40px rgba(243, 156, 18, 0.2);
+}
+
+.categoryTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f39c12;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skillGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+}
+
+.skillItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skillItem:hover {
+    transform: translateY(-8px);
+    background: rgba(243, 156, 18, 0.1);
+    border-color: #f39c12;
+    box-shadow: 0 8px 25px rgba(243, 156, 18, 0.3);
+}
+
+.skillIcon {
+    font-size: 3rem;
+    color: #f39c12;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.skillItem:hover .skillIcon {
+    transform: scale(1.2);
+    color: #e74c3c;
+}
+
+.skillItem span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #d0d0d0;
     text-align: center;
-    padding: 0 1rem;
 }
 
-.skillsTitle
-{
-    margin: 1rem 0;
-    font-size: 3rem;  
-}
-
-.fai
-{
-    color: turquoise;
-}
-
-.skillscontainer > div
-{
-    display: flex;
-    font-size: 100px;
-    flex-wrap: wrap;
-}
-
-@keyframes glow 
-{
-    20% 
-    {
-      box-shadow: 0 0 20px turquoise;
-    }
-    50% 
-    {
-      box-shadow: 0 0 10px transparent;
-    }
-    90%
-    {
-        box-shadow: 0 0 20px turquoise;
-    }
-  }
-
-.face1
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-}
-
-
-.face2
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-delay: 2s;
-    animation-timing-function: ease-in;
-}
-
-.face3
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-delay: 4s;
-    animation-timing-function: ease-in;
-}
-.face4
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-delay: 6s;
-    animation-timing-function: ease-in;
-}
-.face5
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-delay: 8s;
-    animation-timing-function: ease-in;
-}
-.face6
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-delay: 10s;
-    animation-timing-function: ease-in;
-}
-
-.face7
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-delay: 12s;
-    animation-timing-function: ease-in;
-}
-
-.face8
-{
-    border: 2px solid turquoise;
-    border-radius: 10px;
-    padding : 20px;
-    margin: 15px;
-    width: 210px;
-    cursor: pointer;
-    animation: glow 2s;
-    animation-iteration-count: 1;
-    animation-delay: 14s;
-    animation-timing-function: ease-in;
-}
-
-.face1:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-
-.face2:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-.face3:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-
-.face4:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-
-.face5:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-
-.face6:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-
-.face7:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-
-.face8:hover
-{
-    transform: translateY(-10px);
-    color: turquoise;
-    background-color: black;
-    box-shadow: 0 10px 10px 0 turquoise;
-}
-
-.innerdiv
-{
-    font-size: 2rem;
-}
-
-
-
-/* General styles for non-responsive layout */
-/* Add your global styles here */
-
-/* Media query for screens up to 767 pixels (typical mobile size) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #skills {
-      padding: 10px; /* Example padding adjustment for smaller screens */
+        padding: 3rem 1rem;
     }
-  
-    .skillscontainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center; /* Center vertically */
+
+    .skillsTitle {
+        font-size: 2.5rem;
     }
-  
-    .cubespinner {
-      width: 100%; /* Ensure the cube spinner takes full width on smaller screens */
-      text-align: center; /* Center the text content */
+
+    .skillCategory {
+        padding: 2rem;
     }
-  
-    .face1,
-    .face2,
-    .face3,
-    .face4,
-    .face5,
-    .face6,
-    .face7,
-    .face8 {
-      width: 100%; /* Make each face take full width on smaller screens */
-      margin: 10px 10px; /* Example margin adjustment between faces */
+
+    .categoryTitle {
+        font-size: 1.5rem;
     }
-  }
-  
+
+    .skillGrid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .skillItem {
+        padding: 1rem;
+    }
+
+    .skillIcon {
+        font-size: 2.5rem;
+    }
+
+    .skillItem span {
+        font-size: 0.9rem;
+    }
+}

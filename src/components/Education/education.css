@@ -1,0 +1,166 @@
+#education {
+    min-height: 100vh;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.educationTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.educationTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #ee5a6f);
+    border-radius: 2px;
+}
+
+.educationContainer {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.educationCard {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.educationCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #ff6b6b, #ee5a6f);
+}
+
+.educationCard:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 107, 107, 0.3);
+    box-shadow: 0 10px 40px rgba(255, 107, 107, 0.2);
+}
+
+.educationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.degreeInfo {
+    flex: 1;
+}
+
+.degreeTitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+}
+
+.institutionName {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.educationDate {
+    font-size: 1rem;
+    color: #ee5a6f;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cgpa {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.courseDetails {
+    margin-top: 1rem;
+}
+
+.courseLabel {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.courseList {
+    font-size: 0.95rem;
+    color: #d0d0d0;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #education {
+        padding: 3rem 1rem;
+    }
+
+    .educationTitle {
+        font-size: 2.5rem;
+    }
+
+    .educationCard {
+        padding: 2rem;
+    }
+
+    .educationHeader {
+        flex-direction: column;
+    }
+
+    .degreeTitle {
+        font-size: 1.4rem;
+    }
+
+    .institutionName {
+        font-size: 1.1rem;
+    }
+
+    .educationDate {
+        font-size: 0.9rem;
+    }
+
+    .cgpa {
+        font-size: 1rem;
+    }
+
+    .courseList {
+        font-size: 0.9rem;
+    }
+}

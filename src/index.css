@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#0a0a0a] text-white font-sans;
+        overflow-x: hidden;
+    }
+}
+
+@layer components {
+    .glass-card {
+        @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+    }
+
+    .glass-card-hover {
+        @apply hover:bg-white/20 hover:border-turquoise/50 transition-all duration-300;
+    }
+
+    .text-glow {
+        text-shadow: 0 0 10px rgba(64, 224, 208, 0.5);
+    }
+
+    .neon-border {
+        @apply border border-turquoise/30 hover:border-turquoise shadow-[0_0_15px_rgba(64, 224, 208, 0.2)] hover:shadow-[0_0_25px_rgba(64, 224, 208, 0.4)];
+    }
+}
+
+/* Custom transitions */
+.smooth-scroll {
+    scroll-behavior: smooth;
+}

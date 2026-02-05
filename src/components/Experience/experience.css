@@ -1,0 +1,183 @@
+#experience {
+    min-height: 100vh;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+}
+
+.experienceTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.experienceTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #00d4ff, #0099ff);
+    border-radius: 2px;
+}
+
+.experienceContainer {
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.experienceContainer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #00d4ff, #0099ff);
+}
+
+.experienceItem {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.experienceItem::before {
+    content: '';
+    position: absolute;
+    left: -2.6rem;
+    top: 2rem;
+    width: 16px;
+    height: 16px;
+    background: #00d4ff;
+    border-radius: 50%;
+    border: 3px solid #0a0a0a;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+.experienceItem:hover {
+    transform: translateX(10px);
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.2);
+}
+
+.experienceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.companyInfo {
+    flex: 1;
+}
+
+.jobTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00d4ff;
+    margin-bottom: 0.5rem;
+}
+
+.companyName {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.dateRange {
+    font-size: 1rem;
+    color: #0099ff;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.responsibilities li {
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.responsibilities li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #00d4ff;
+    font-size: 1.2rem;
+}
+
+.responsibilities li strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    #experience {
+        padding: 3rem 1rem;
+    }
+
+    .experienceTitle {
+        font-size: 2.5rem;
+    }
+
+    .experienceContainer {
+        padding-left: 1rem;
+    }
+
+    .experienceItem {
+        margin-left: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .experienceItem::before {
+        left: -2.1rem;
+    }
+
+    .experienceHeader {
+        flex-direction: column;
+    }
+
+    .jobTitle {
+        font-size: 1.3rem;
+    }
+
+    .companyName {
+        font-size: 1rem;
+    }
+
+    .dateRange {
+        font-size: 0.9rem;
+    }
+
+    .responsibilities li {
+        font-size: 0.95rem;
+    }
+}

@@ -100,7 +100,7 @@ const Contacts = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               id='subBtn1'
-              className='w-full bg-turquoise text-dark font-bold py-4 rounded-2xl shadow-turquoise-glow-medium hover:bg-turquoise-light transition-all flex items-center justify-center gap-3'
+              className='w-full bg-turquoise text-dark font-bold py-4 rounded-2xl hover:bg-turquoise-light transition-all flex items-center justify-center gap-3'
             >
               <FontAwesomeIcon icon={faPaperPlane} />
               Send Message

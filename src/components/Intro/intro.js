@@ -80,10 +80,10 @@ const Intro = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="flex-1 mt-12 md:mt-0 relative"
+          className="flex-1 relative"
         >
           <div className="absolute inset-0 bg-turquoise/20 blur-[100px] rounded-full scale-75 -z-10 animate-pulse-slow"></div>
-          <img src={myimg} alt="Royal Castelino" className="w-full max-w-lg mx-auto object-cover select-none pointer-events-none drop-shadow-2xl translate-y-[-10%] md:translate-y-0" />
+          <img src={myimg} alt="Royal Castelino" className="w-full max-w-lg mx-auto object-cover select-none pointer-events-none drop-shadow-2xl translate-y-[-10%] md:translate-y-0 sm:block hidden mt-40" />
         </motion.div>
       </motion.div>
 

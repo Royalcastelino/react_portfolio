@@ -39,7 +39,7 @@ const Experience = () => {
                     </motion.h2>
                 </div>
 
-                <div className='relative border-l-2 border-turquoise/20 ml-4 py-8 space-y-12'>
+                <div className='relative border-l-0 lg:border-l-2 border-turquoise/20 ml-0 lg:ml-4 py-8 space-y-12'>
                     {experiences.map((exp, idx) => (
                         <motion.div
                             key={idx}
@@ -47,12 +47,12 @@ const Experience = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.2 }}
-                            className="relative pl-8"
+                            className="relative pl-0 lg:pl-8"
                         >
                             {/* Dot on timeline */}
-                            <div className="absolute left-[-9px] top-6 w-4 h-4 rounded-full bg-turquoise shadow-turquoise-glow"></div>
+                            <div className="hidden lg:block absolute left-[-9px] top-6 w-4 h-4 rounded-full bg-turquoise shadow-turquoise-glow"></div>
 
-                            <div className="glass-card p-8 glass-card-hover group">
+                            <div className="glass-card p-6 sm:p-8 glass-card-hover group">
                                 <div className='flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6'>
                                     <div>
                                         <h3 className='text-2xl font-bold text-turquoise group-hover:text-glow'>{exp.title}</h3>

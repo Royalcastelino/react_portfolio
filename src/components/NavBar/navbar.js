@@ -19,15 +19,11 @@ const Navbar = () => {
     const [btnHovered, setBtnHovered] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const [scrollProgress, setScrollProgress] = useState(0);
     const [activeSection, setActiveSection] = useState('intro');
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollY = window.scrollY;
-            setScrolled(scrollY > 20);
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            setScrollProgress(docHeight > 0 ? (scrollY / docHeight) * 100 : 0);
+            setScrolled(window.scrollY > 20);
         };
         window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);

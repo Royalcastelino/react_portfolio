@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import masterImg from '../../assets/master.png';
+import bachelorImg from '../../assets/bachelors.png';
 
 const Education = () => {
     const educationData = [
@@ -8,6 +10,7 @@ const Education = () => {
             institution: "Manipal Institute of Technology, Manipal",
             period: "Sep 2022 - Aug 2024",
             cgpa: "8.31/10",
+            image: masterImg,
             courses: "Object Oriented Programming, Databases, Discrete Math, Data Structures and Algorithms, Operating Systems, Computer Networks, Machine Learning, Java, Web Design"
         },
         {
@@ -15,6 +18,7 @@ const Education = () => {
             institution: "St Aloysius College (Autonomous), Mangalore",
             period: "June 2019 - May 2022",
             cgpa: "8.74/10",
+            image: bachelorImg,
             courses: "Object Oriented Programming, Databases, Computer General Analysis, Data Structures and Algorithms, RDBMS, Linux, Java, Web Designing, J2EE"
         }
     ];
@@ -48,11 +52,27 @@ const Education = () => {
                             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-turquoise/0 via-turquoise/50 to-turquoise/0 group-hover:via-turquoise transition-all duration-500"></div>
 
                             <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6'>
-                                <div className='flex-1'>
-                                    <h3 className='text-2xl font-bold text-white group-hover:text-turquoise transition-colors duration-300'>{edu.degree}</h3>
-                                    <h4 className='text-xl text-white/70 font-medium mt-1 uppercase tracking-wider text-sm'>{edu.institution}</h4>
+                                <div className='flex items-center gap-5 flex-1'>
+                                    {/* Institution logo */}
+                                    <motion.div
+                                        whileHover={{ scale: 1.08 }}
+                                        transition={{ type: 'spring', stiffness: 300 }}
+                                        className="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white border-2 border-white/20
+                                                flex items-center justify-center overflow-hidden shadow-lg p-1.5 transition-all duration-300"
+                                    >
+                                        <img
+                                            src={edu.image}
+                                            alt={edu.institution}
+                                            className="w-full h-full object-contain rounded-full"
+                                        />
+                                    </motion.div>
+
+                                    <div>
+                                        <h3 className='text-2xl font-bold text-white group-hover:text-turquoise transition-colors duration-300'>{edu.degree}</h3>
+                                        <h4 className='text-white/70 font-medium mt-1 uppercase tracking-wider text-sm'>{edu.institution}</h4>
+                                    </div>
                                 </div>
-                                <div className='text-turquoise font-semibold bg-turquoise/10 px-4 py-1 rounded-full border border-turquoise/20'>
+                                <div className='text-turquoise font-semibold bg-turquoise/10 px-4 py-1 rounded-full border border-turquoise/20 shrink-0'>
                                     {edu.period}
                                 </div>
                             </div>

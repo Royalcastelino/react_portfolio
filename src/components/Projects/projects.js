@@ -55,26 +55,45 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="glass-card group overflow-hidden border border-white/5 hover:border-turquoise/30 transition-all duration-300"
+              whileHover={{ y: -8 }}
+              className="glass-premium glass-premium-hover group overflow-hidden"
             >
+              {/* Image with glass-tinted overlay on hover */}
               <div className="relative overflow-hidden h-48">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6">
-                  <motion.a whileHover={{ scale: 1.2 }} href={project.github} className="text-white text-3xl hover:text-turquoise"><FontAwesomeIcon icon={faGithub} /></motion.a>
-                  <motion.a whileHover={{ scale: 1.2 }} href="#" className="text-white text-3xl hover:text-turquoise"><FontAwesomeIcon icon={faExternalLinkAlt} /></motion.a>
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                {/* Permanent subtle gradient at bottom */}
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/70 to-transparent" />
+                {/* Glass overlay on hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                                flex items-center justify-center gap-6
+                                bg-black/30 backdrop-blur-sm">
+                  <motion.a whileHover={{ scale: 1.2 }} href={project.github} target="_blank" rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center
+                               text-white hover:text-turquoise hover:bg-turquoise/20 transition-all">
+                    <FontAwesomeIcon icon={faGithub} className="text-xl" />
+                  </motion.a>
+                  <motion.a whileHover={{ scale: 1.2 }} href="#"
+                    className="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center
+                               text-white hover:text-turquoise hover:bg-turquoise/20 transition-all">
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xl" />
+                  </motion.a>
                 </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-turquoise transition-colors">{project.title}</h3>
-                <p className="text-white/60 text-sm mb-6 line-clamp-3">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-turquoise transition-colors duration-300">{project.title}</h3>
+                <p className="text-white/55 text-sm mb-6 line-clamp-3 leading-relaxed">
                   {project.description}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tech.map((t, tIdx) => (
-                    <span key={tIdx} className="text-[10px] uppercase tracking-tighter font-bold bg-white/5 text-white/40 px-2 py-1 rounded border border-white/10 group-hover:border-turquoise/30 group-hover:text-turquoise transition-all">
+                    <span key={tIdx}
+                      className="text-[10px] uppercase tracking-wider font-bold
+                                 bg-white/[0.04] backdrop-blur-sm text-white/40
+                                 px-3 py-1 rounded-full border border-white/[0.08]
+                                 group-hover:border-turquoise/30 group-hover:text-turquoise/80
+                                 transition-all duration-300">
                       {t}
                     </span>
                   ))}

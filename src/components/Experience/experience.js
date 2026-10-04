@@ -6,7 +6,7 @@ const Experience = () => {
         {
             title: "Software Developer",
             company: "Parrophins Private Limited, Mangalore",
-            period: "April 2025 - Present",
+            period: "April 2025 - Jan 2026",
             responsibilities: [
                 "Built a real-time budget management system for educational institutions with yearly/monthly budget planning and chat functionality via a responsive web interface.",
                 "Developed and scaled a modular staff web application with OTP login, managing alumni’s, approving and generating certificate’s along with contribution pages to collect donation's; deployed across 5+ Institutions with consistent UI/UX",

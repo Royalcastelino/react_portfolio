@@ -10,12 +10,39 @@
 }
 
 @layer components {
+    /* Base glass — used broadly */
     .glass-card {
-        @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+        @apply bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] rounded-2xl;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
     }
 
     .glass-card-hover {
-        @apply hover:bg-white/20 hover:border-turquoise/50 transition-all duration-300;
+        @apply hover:bg-white/[0.08] hover:border-turquoise/40 transition-all duration-300;
+    }
+
+    /* Premium glass — deeper blur, subtle inner glow, for hero elements */
+    .glass-premium {
+        background: rgba(255,255,255,0.03);
+        backdrop-filter: blur(24px) saturate(180%);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-top-color: rgba(255,255,255,0.18);
+        border-radius: 1.25rem;
+        box-shadow:
+            0 8px 32px rgba(0,0,0,0.5),
+            inset 0 1px 0 rgba(255,255,255,0.1),
+            inset 0 -1px 0 rgba(0,0,0,0.2);
+    }
+
+    .glass-premium-hover {
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .glass-premium-hover:hover {
+        border-color: rgba(64,224,208,0.35);
+        box-shadow:
+            0 8px 40px rgba(0,0,0,0.6),
+            0 0 0 1px rgba(64,224,208,0.12),
+            inset 0 1px 0 rgba(255,255,255,0.12);
     }
 
     .text-glow {
@@ -23,7 +50,7 @@
     }
 
     .neon-border {
-        @apply border border-turquoise/30 hover:border-turquoise shadow-[0_0_15px_rgba(64, 224, 208, 0.2)] hover:shadow-[0_0_25px_rgba(64, 224, 208, 0.4)];
+        @apply border border-turquoise/30 hover:border-turquoise shadow-[0_0_15px_rgba(64,224,208,0.2)] hover:shadow-[0_0_25px_rgba(64,224,208,0.4)];
     }
 }
 

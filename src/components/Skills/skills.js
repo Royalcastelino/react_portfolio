@@ -61,20 +61,29 @@ const Skills = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.2 }}
-                            className="glass-card p-8"
+                            className="glass-premium p-8"
                         >
                             <h3 className='text-2xl font-semibold mb-8 text-turquoise border-b border-turquoise/20 pb-4'>
                                 {category.title}
                             </h3>
-                            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6'>
+                            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                                 {category.skills.map((skill, sIdx) => (
                                     <motion.div
                                         key={sIdx}
-                                        whileHover={{ y: -5, backgroundColor: 'rgba(64, 224, 208, 0.1)' }}
-                                        className='flex flex-col items-center justify-center p-6 border border-white/5 rounded-xl transition-all duration-300'
+                                        whileHover={{ y: -4, scale: 1.04 }}
+                                        transition={{ type: 'spring', stiffness: 300 }}
+                                        className='flex flex-col items-center justify-center p-5 rounded-xl
+                                                   bg-white/[0.03] backdrop-blur-md
+                                                   border border-white/[0.07]
+                                                   hover:border-turquoise/40 hover:bg-turquoise/[0.06]
+                                                   hover:shadow-[0_0_18px_rgba(64,224,208,0.12)]
+                                                   transition-all duration-300 group cursor-default'
                                     >
-                                        <FontAwesomeIcon icon={skill.icon} className='text-4xl text-turquoise/80 mb-4 group-hover:scale-110 transition-transform' />
-                                        <span className='text-white/80 font-medium text-center'>{skill.name}</span>
+                                        <FontAwesomeIcon icon={skill.icon}
+                                            className='text-3xl text-turquoise/70 group-hover:text-turquoise mb-3 transition-colors duration-300' />
+                                        <span className='text-white/70 group-hover:text-white font-medium text-center text-sm transition-colors duration-300'>
+                                            {skill.name}
+                                        </span>
                                     </motion.div>
                                 ))}
                             </div>

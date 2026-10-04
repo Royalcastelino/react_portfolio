@@ -52,9 +52,9 @@ const Contacts = () => {
           <div className='flex flex-col gap-6'>
             {[
               { icon: faEnvelope, label: "Email", value: "royalcastelino350@gmail.com", link: "mailto:royalcastelino350@gmail.com" },
-              { icon: faPhone, label: "Phone", value: "+91 7619421424", link: "tel:+917619421424" },
-              { icon: faLinkedin, label: "LinkedIn", value: "Royal Castelino", link: "https://www.linkedin.com/in/royal-castelino" },
-              { icon: faGithub, label: "GitHub", value: "Royalcastelino", link: "https://github.com/Royalcastelino" }
+              { icon: faPhone, label: "Phone", value: "+965 66250466", link: "tel:+96566250466" },
+              { icon: faLinkedin, label: "LinkedIn", value: "Linkedin.com/royal-castelino", link: "https://www.linkedin.com/in/royal-castelino" },
+              { icon: faGithub, label: "GitHub", value: "Github.com/Royalcastelino", link: "https://github.com/Royalcastelino" }
             ].map((item, idx) => (
               <motion.a
                 key={idx}
@@ -93,7 +93,7 @@ const Contacts = () => {
             </div>
             <div className="space-y-2">
               <label className="text-white/70 text-sm font-medium ml-4">Message</label>
-              <textarea id='emessage' rows='4' placeholder='Tell me about your project...' className='w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-turquoise/50 focus:bg-white/10 transition-all text-white placeholder:text-white/20 resize-none' />
+              <textarea id='emessage' rows='4' placeholder='Type here...' className='w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-turquoise/50 focus:bg-white/10 transition-all text-white placeholder:text-white/20 resize-none' />
             </div>
 
             <motion.button

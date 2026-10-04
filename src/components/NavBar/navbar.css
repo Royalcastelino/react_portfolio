@@ -1,5 +1,4 @@
-.navbar
-{
+.navbar {
     height: 5rem;
     width: 100vw;
     max-width: 75rem;
@@ -9,59 +8,57 @@
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 3;
-    background-color: rgb(30,30,30);
+    background-color: rgb(30, 30, 30);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.logo
-{
+.logo {
     object-fit: cover;
     height: 3rem;
     width: 4rem;
 }
 
-.desktopMenuListItem
-{
+.desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
-    color: white;  
+    color: white;
 }
 
-.desktopMenuListItem:hover{
+.desktopMenuListItem:hover {
     /* color: black; */
     padding-bottom: 0.5rem;
     border-bottom: 3px solid turquoise;
 }
-.desktopMenuBtn
-{
+
+.desktopMenuBtn {
     background: turquoise;
     color: black;
-    border:none;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 12px 0rem 0rem;
     border-radius: 2rem;
 }
-.desktopMenuImg
-{
+
+.desktopMenuImg {
     object-fit: cover;
     height: 1.5rem;
     width: 1.5rem;
-    margin: 0.5rem;    
+    margin: 0.5rem;
 }
 
 @media screen and (max-width: 767px) {
     .navbar {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-  
+
     .desktopMenu {
-      flex-direction: column;
-      gap: 10px;
+        flex-direction: column;
+        gap: 10px;
     }
-  }
+}

@@ -41,7 +41,7 @@ const Certifications = () => {
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.2 }}
                             whileHover={{ scale: 1.02 }}
-                            className="glass-card group p-8 flex items-center gap-6 border-l-4 border-turquoise shadow-turquoise-glow hover:shadow-turquoise-glow-strong transition-all duration-300"
+                            className="glass-card group p-8 flex items-center gap-6 border-l-4 border-turquoise hover:shadow-turquoise-glow transition-all duration-300"
                         >
                             <div className='p-4 rounded-full bg-turquoise/10 text-turquoise text-3xl group-hover:scale-110 transition-transform'>
                                 <FontAwesomeIcon icon={cert.icon} />

@@ -8,29 +8,35 @@ import { motion } from 'framer-motion';
 
 const Contacts = () => {
   const handleFormSubmit = (event) => {
-    event.preventDefault();
-    const email = document.getElementById('eemail').value;
-    const name = document.getElementById('ename').value;
-    const message = document.getElementById('emessage').value;
+  event.preventDefault();
 
-    emailjs
-      .send(
-        emailjsConfig.serviceID,
-        emailjsConfig.templateID,
-        {
-          from_name: name,
-          message: message + "\n Respond to Email: " + email,
-        },
-        emailjsConfig.userID
-      )
-      .then((response) => {
-        alert('Message sent successfully!');
-      })
-      .catch((error) => {
-        console.error('Email sending failed:', error);
-        alert('Failed to send message. Please try again.');
-      });
-  };
+  const email = document.getElementById('eemail').value;
+  const name = document.getElementById('ename').value;
+  const message = document.getElementById('emessage').value;
+
+  emailjs
+    .send(
+      emailjsConfig.serviceID,
+      emailjsConfig.templateID,
+      {
+        from_name: name,
+        from_email: email,
+        message: message,
+      },
+      emailjsConfig.userID
+    )
+    .then(() => {
+      alert('Message sent successfully!');
+
+      document.getElementById('ename').value = '';
+      document.getElementById('eemail').value = '';
+      document.getElementById('emessage').value = '';
+    })
+    .catch((error) => {
+      console.error('Email sending failed:', error);
+      alert('Failed to send message. Please try again.');
+    });
+};
 
   return (
     <section id='contacts' className='py-24 bg-dark px-8 relative overflow-hidden'>

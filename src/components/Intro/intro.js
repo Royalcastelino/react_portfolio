@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import myimg from '../../assets/image.png';
+import myimg from '../../assets/me.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
